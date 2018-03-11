@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply plugin: 'checkstyle'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.epam.androidlab.task1_helloworld"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+check.dependsOn 'checkstyle'
+
+task checkstyle(type: Checkstyle) {
+    configFile=rootProject.file('config/checkstyle/checkstyle.xml')
+    configProperties.checkstyleSuppressionsPath = rootProject.file('config/checkstyle/suppressions.xml')
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+    classpath = files()
+}
+
+checkstyle{
+    toolVersion = "5.9"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+}

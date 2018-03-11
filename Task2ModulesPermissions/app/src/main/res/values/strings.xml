@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="ok">OK</string>
+    <string name="access_required">Your request is required to display activity from another app</string>
+
+    <string name="activity_permission_not_available">Permission is not available. Requesting activity permission.</string>
+    <string name="activity_permission_granted">Activity permission was granted. Starting preview.</string>
+    <string name="activity_permission_denied">Activity permission request was denied.</string>
+
+    <string name="intro">Click the button below to request permission and open a full-screen activity preview.</string>
+    <string name="btn_start_app2_activity">start the 2nd app\'s activity</string>
+
+</resources>

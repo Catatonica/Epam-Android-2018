@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">app2</string>
+    <string name="tv_label">Sending email</string>
+    <string name="permlab_deadlyActivity">Permission for the 2nd app </string>
+    <string name="permdesc_deadlyActivity">invoke activity from the app2 </string>
+    <string name="tv_to">To:</string>
+    <string name="et_recipients">Recipients</string>
+    <string name="tv_subject">Subject:</string>
+    <string name="et_the_topic">The topic of your message</string>
+    <string name="tv_message">Message:</string>
+    <string name="et_message">The text of your message</string>
+    <string name="btn_send">Send</string>
+</resources>

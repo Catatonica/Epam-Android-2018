@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Task1_HelloWorld</string>
+    <string name="display">Display</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="greetings">Hello! Holla! Hallo! Salaam!</string>
+    <string name="joke">What is the difference between a snowman and a snowwoman?\n -Snowballs.</string>
+    <string name="hint_enter_string_resource">Enter string resource</string>
+    <string name="error_no_such_string_resource">There\'s no such string resource.</string>
+    <string name="available_names_for_resources">List of some string resources:
+        \n\n   hello_world,\n   greetings,\n   joke</string>
+</resources>
