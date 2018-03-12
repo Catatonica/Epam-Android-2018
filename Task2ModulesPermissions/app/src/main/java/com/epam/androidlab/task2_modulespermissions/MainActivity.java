@@ -14,6 +14,9 @@ import android.view.View;
  * This activity tries to launch activity from another module.
  * That module is protected by custom dangerous permission, so this activity
  * implements necessary requests and reacts appropriately.
+ *
+ * @author Elizabeth Gavina
+ * @since 6.0
  */
 public class MainActivity extends AppCompatActivity implements OnRequestPermissionsResultCallback {
 

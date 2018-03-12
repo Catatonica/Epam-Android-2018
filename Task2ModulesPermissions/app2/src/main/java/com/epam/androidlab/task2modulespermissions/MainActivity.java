@@ -10,6 +10,8 @@ import android.widget.EditText;
 /**
  * This activity allows user to write and send email using available email client.
  * It's protected by custom dangerous permission.
+ *
+ * @author Elizabeth Gavina
  */
 public class MainActivity extends AppCompatActivity {
 
