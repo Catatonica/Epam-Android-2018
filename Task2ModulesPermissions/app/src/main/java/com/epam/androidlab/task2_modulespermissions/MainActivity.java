@@ -10,10 +10,16 @@ import android.support.v4.app.ActivityCompat.OnRequestPermissionsResultCallback;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+/**
+ * This activity tries to launch activity from another module.
+ * That module is protected by custom dangerous permission, so this activity
+ * implements necessary requests and reacts appropriately.
+ */
 public class MainActivity extends AppCompatActivity implements OnRequestPermissionsResultCallback {
 
-    private static final int PERMISSION_REQUEST_ACTIVITY=0;
-    private static final String PERMISSION_NAME="com.epam.androidlab.task2_modulespermissions.permission.DEADLY_ACTIVITY";
+    private static final int PERMISSION_REQUEST_ACTIVITY = 0;
+    private static final String PERMISSION_NAME
+            = "com.epam.androidlab.task2_modulespermissions.permission.DEADLY_ACTIVITY";
     private View mLayout;
 
     @Override
@@ -21,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements OnRequestPermissi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLayout=  findViewById(R.id.main_layout);
+        mLayout =  findViewById(R.id.main_layout);
     }
 
     /**
@@ -97,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements OnRequestPermissi
      * Start activity from the 2nd app.
      */
     private void startSecondActivity() {
-        Intent app2Intent=new Intent();
+        Intent app2Intent = new Intent();
         app2Intent
                 .setAction("com.epam.androidlab.task2modulespermissions.SECOND_APP_ACTIVITY")
                 .addCategory("android.intent.category.DEFAULT");
