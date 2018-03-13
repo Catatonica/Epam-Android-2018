@@ -4,8 +4,6 @@
     <dimen name="margin_medium">16dp</dimen>
     <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
-
-    <dimen name="text_medium_size">22sp</dimen>
     <dimen name="text_small_size">16sp</dimen>
 
 </resources>
