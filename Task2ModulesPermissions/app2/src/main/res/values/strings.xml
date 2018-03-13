@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">app2</string>
     <string name="tv_label">Sending email</string>
-    <string name="permlab_deadlyActivity">Permission for the 2nd app </string>
-    <string name="permdesc_deadlyActivity">invoke activity from the app2 </string>
+    <string name="lblDeadlyActivity">Permission for the 2nd app </string>
+    <string name="dscDeadlyActivity">invoke activity from the app2 </string>
     <string name="tv_to">To:</string>
     <string name="et_recipients">Recipients</string>
     <string name="tv_subject">Subject:</string>

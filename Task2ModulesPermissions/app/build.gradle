@@ -21,7 +21,7 @@ android {
 check.dependsOn 'checkstyle'
 
 task checkstyle(type: Checkstyle) {
-    configFile=rootProject.file('config/checkstyle/checkstyle.xml')
+    configFile = rootProject.file('config/checkstyle/checkstyle.xml')
     configProperties.checkstyleSuppressionsPath = rootProject.file('config/checkstyle/suppressions.xml')
     source 'src'
     include '**/*.java'
@@ -29,13 +29,11 @@ task checkstyle(type: Checkstyle) {
     classpath = files()
 }
 
-checkstyle{
+checkstyle {
     toolVersion = "5.9"
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:27.1.0'
 }

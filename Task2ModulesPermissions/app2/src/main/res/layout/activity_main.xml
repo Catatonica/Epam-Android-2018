@@ -3,89 +3,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:orientation="vertical"
+    android:padding="@dimen/margin_medium"
     tools:context="com.epam.androidlab.task2modulespermissions.MainActivity">
 
     <TextView
-        android:layout_gravity="center"
-        android:textSize="22sp"
-        android:layout_marginBottom="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
         android:text="@string/tv_label"
-        />
+        android:textSize="@dimen/text_medium_size" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
-            android:text="@string/tv_to"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_to" />
 
         <EditText
             android:id="@+id/etRecipients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:textSize="16sp"
             android:hint="@string/et_recipients"
             android:maxLines="3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:textSize="@dimen/text_small_size" />
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_weight="1"
-            android:text="@string/tv_subject"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_subject" />
 
         <EditText
             android:id="@+id/etSubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="4"
             android:hint="@string/et_the_topic"
-            android:textSize="16sp"
             android:maxLines="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:textSize="@dimen/text_small_size" />
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/tv_message" />
 
-        <TextView
-            android:layout_marginTop="5dp"
-            android:text="@string/tv_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
 
-
-        <ScrollView
-            android:layout_weight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
+        <EditText
+            android:id="@+id/etMessage"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
-            <EditText
-                android:id="@+id/etMessage"
-                android:textSize="16sp"
-                android:hint="@string/et_message"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </ScrollView>
+            android:layout_height="wrap_content"
+            android:hint="@string/et_message"
+            android:textSize="@dimen/text_small_size" />
+    </ScrollView>
 
     <Button
         android:id="@+id/btnSend"
-        android:onClick="onBtnSendClick"
-        android:layout_gravity="center"
-        android:text="@string/btn_send"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_send" />
 
 </LinearLayout>

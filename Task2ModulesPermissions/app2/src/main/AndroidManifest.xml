@@ -3,35 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.epam.androidlab.task2modulespermissions">
 
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
         android:name="com.epam.androidlab.task2_modulespermissions.permission.DEADLY_ACTIVITY"
-        android:label="@string/permlab_deadlyActivity"
-        android:description="@string/permdesc_deadlyActivity"
+        android:description="@string/dscDeadlyActivity"
+        android:label="@string/lblDeadlyActivity"
+        android:permissionGroup="android.permission-group.SEND_EMAIL"
         android:protectionLevel="dangerous" />
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:fullBackupContent="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".MainActivity"
+            android:permission="com.epam.androidlab.task2_modulespermissions.permission.DEADLY_ACTIVITY">
             <intent-filter>
                 <action android:name="com.epam.androidlab.task2modulespermissions.SECOND_APP_ACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 </manifest>
