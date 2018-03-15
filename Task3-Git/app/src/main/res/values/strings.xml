@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task3-Git</string>
+    <string name="set">set</string>
+    <string name="et_field_name">Enter field name</string>
+</resources>
