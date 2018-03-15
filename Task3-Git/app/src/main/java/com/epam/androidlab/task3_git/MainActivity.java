@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         init();
     }
 
+    
     private void init() {
         etField = findViewById(R.id.etField);
         tvNewField = findViewById(R.id.tvNewField);
