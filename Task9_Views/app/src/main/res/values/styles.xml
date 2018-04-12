@@ -1,0 +1,13 @@
+<resources>
+    <style name="AppTheme">
+        <item name="colorPrimary">#b2dfdb</item>
+        <item name="colorPrimaryDark">#dd90caf9</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <item name="colorPrimary">#00bfa5</item>
+        <item name="colorPrimaryDark">#1565c0</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+</resources>
