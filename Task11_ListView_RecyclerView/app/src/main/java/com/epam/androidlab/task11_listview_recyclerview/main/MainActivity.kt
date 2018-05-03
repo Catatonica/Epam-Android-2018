@@ -13,7 +13,7 @@ import com.epam.androidlab.task11_listview_recyclerview.recycler_view.ContactsRV
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
- * This activity shows a user a list of his contacts, using ListView or RecyclerView,
+ * This activity shows user a list of his contacts, using ListView or RecyclerView,
  * which are enclosed in fragments. By clicking on some contact, you can dial with it.
  * You can choose what container to use(a fragment with RV or LV) by clicking on
  * appropriate button.
